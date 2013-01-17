@@ -15,9 +15,14 @@ class FileFilterIterator extends \FilterIterator
     public function accept()
     {
         if ($this->getInnerIterator()->isFile()) {
-            return in_array(strtolower($this->getInnerIterator()->getExtension()), $this->extensions);
+            return in_array(strtolower($this->getExtension()), $this->extensions);
         } else {
             return false;
         }
+    }
+
+    public function getExtension()
+    {
+        return pathinfo($this->getInnerIterator()->getFilename(), PATHINFO_EXTENSION);
     }
 }
