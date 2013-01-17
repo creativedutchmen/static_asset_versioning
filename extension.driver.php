@@ -21,15 +21,18 @@ class extension_static_asset_versioning extends Extension
 		$start = precision_timer();
 		//var_dump($context['xml']);
 		$factory = new FolderIteratorFactory;
+
 		$watch_dirs = array(
 			'js' => WORKSPACE . '/js',
 			'css' => WORKSPACE . '/css',
 		);
-		$watch_dirs = array_map('realpath', $watch_dirs);
+
 		$extensions = array(
 			'css',
 			'js'
 		);
+
+		$watch_dirs = array_map('realpath', $watch_dirs);
 		$directories = $factory->build(
 			$watch_dirs,
 			$extensions
