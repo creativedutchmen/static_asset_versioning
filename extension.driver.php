@@ -4,6 +4,13 @@ require_once('lib/folder_iterator_factory.php');
 
 use symphony\extensions\static_asset_versioning\FolderIteratorFactory as FolderIteratorFactory;
 
+
+/**
+ * extension_static_asset_versioning
+ *
+ * @package static_asset_versioning
+ * @author Huib Keemink
+ **/
 class extension_static_asset_versioning extends Extension
 {
     public function getSubscribedDelegates()

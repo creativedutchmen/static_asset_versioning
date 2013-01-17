@@ -4,7 +4,12 @@ namespace symphony\extensions\static_asset_versioning;
 
 require_once('iterators/file_filter_iterator.php');
 require_once('iterators/folders_iterator.php');
-
+/**
+ * FolderIteratorFactory
+ * 
+ * @package default
+ * @author Huib Keemink
+ */
 class FolderIteratorFactory
 {
     protected $iterator;
