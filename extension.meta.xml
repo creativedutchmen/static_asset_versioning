@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="static_asset_versioning" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Static Asset Versioning</name>
+	<description>Tools to make versioned static assets easier</description>
+	<types>
+		<type>Other</type>
+	</types>
+	<authors>
+		<author>
+			<name github="creativedutchmen" symphony="creativedutchmen">Huib Keemink</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.1" date="2013-01-16" min="2.3">
+			* Initial release, brief documentation forthcoming.
+		</release>
+	</releases>
+</extension>
